@@ -1,0 +1,1179 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html><head>
+<title>Static Call Graph - [.\FLASH\Objects\Project.axf]</title></head>
+<body><HR>
+<H1>Static Call Graph for image .\FLASH\Objects\Project.axf</H1><HR>
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6190004: Last Updated: Fri Feb  3 15:15:11 2023
+<BR><P>
+<H3>Maximum Stack Usage =        424 bytes + Unknown(Untraceable Function Pointers)</H3><H3>
+Call chain for Maximum Stack Depth:</H3>
+main &rArr; User_VOFA_Example &rArr; sin &rArr; __ieee754_rem_pio2 &rArr; __aeabi_dsub &rArr; __aeabi_dadd &rArr; _double_epilogue &rArr; _double_round
+<P>
+<H3>
+Function Pointers
+</H3><UL>
+ <LI><a href="#[4]">BusFault_Handler</a> from lto-llvm-03aa78.o(.text.BusFault_Handler) referenced from lto-llvm-03aa78.o(RESET)
+ <LI><a href="#[7]">DebugMon_Handler</a> from lto-llvm-03aa78.o(.text.DebugMon_Handler) referenced from lto-llvm-03aa78.o(RESET)
+ <LI><a href="#[a]">Default_Handler</a> from lto-llvm-03aa78.o(.text.Default_Handler) referenced 49 times from lto-llvm-03aa78.o(RESET)
+ <LI><a href="#[2]">HardFault_Handler</a> from lto-llvm-03aa78.o(.text.HardFault_Handler) referenced from lto-llvm-03aa78.o(RESET)
+ <LI><a href="#[3]">MemManage_Handler</a> from lto-llvm-03aa78.o(.text.MemManage_Handler) referenced from lto-llvm-03aa78.o(RESET)
+ <LI><a href="#[1]">NMI_Handler</a> from lto-llvm-03aa78.o(.text.NMI_Handler) referenced from lto-llvm-03aa78.o(RESET)
+ <LI><a href="#[8]">PendSV_Handler</a> from lto-llvm-03aa78.o(.text.PendSV_Handler) referenced from lto-llvm-03aa78.o(RESET)
+ <LI><a href="#[0]">Reset_Handler</a> from lto-llvm-03aa78.o(.text.Reset_Handler) referenced from lto-llvm-03aa78.o(RESET)
+ <LI><a href="#[6]">SVC_Handler</a> from lto-llvm-03aa78.o(.text.SVC_Handler) referenced from lto-llvm-03aa78.o(RESET)
+ <LI><a href="#[9]">SysTick_Handler</a> from lto-llvm-03aa78.o(.text.SysTick_Handler) referenced from lto-llvm-03aa78.o(RESET)
+ <LI><a href="#[d]">TMR0_IRQHandler</a> from lto-llvm-03aa78.o(.text.TMR0_IRQHandler) referenced from lto-llvm-03aa78.o(RESET)
+ <LI><a href="#[b]">UART0_IRQHandler</a> from lto-llvm-03aa78.o(.text.UART0_IRQHandler) referenced from lto-llvm-03aa78.o(RESET)
+ <LI><a href="#[c]">UART1_IRQHandler</a> from lto-llvm-03aa78.o(.text.UART1_IRQHandler) referenced from lto-llvm-03aa78.o(RESET)
+ <LI><a href="#[5]">UsageFault_Handler</a> from lto-llvm-03aa78.o(.text.UsageFault_Handler) referenced from lto-llvm-03aa78.o(RESET)
+ <LI><a href="#[f]">fputc</a> from lto-llvm-03aa78.o(.text.fputc) referenced from printfa.o(i.__0printf)
+ <LI><a href="#[e]">main</a> from lto-llvm-03aa78.o(.text.main) referenced from entry9a.o(.ARM.Collect$$$$0000000B)
+</UL>
+<P>
+<H3>
+Global Symbols
+</H3>
+<P><STRONG><a name="[10]"></a>__main</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry.o(.ARM.Collect$$$$00000000))
+<BR><BR>[Called By]<UL><LI><a href="#[0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Reset_Handler
+</UL>
+
+<P><STRONG><a name="[90]"></a>_main_stk</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry4.o(.ARM.Collect$$$$00000003))
+
+<P><STRONG><a name="[11]"></a>_main_scatterload</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry5.o(.ARM.Collect$$$$00000004))
+<BR><BR>[Calls]<UL><LI><a href="#[12]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
+</UL>
+
+<P><STRONG><a name="[1f]"></a>__main_after_scatterload</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry5.o(.ARM.Collect$$$$00000004))
+<BR><BR>[Called By]<UL><LI><a href="#[12]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
+</UL>
+
+<P><STRONG><a name="[91]"></a>_main_clock</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry7b.o(.ARM.Collect$$$$00000008))
+
+<P><STRONG><a name="[92]"></a>_main_cpp_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry8b.o(.ARM.Collect$$$$0000000A))
+
+<P><STRONG><a name="[93]"></a>_main_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry9a.o(.ARM.Collect$$$$0000000B))
+
+<P><STRONG><a name="[94]"></a>__rt_final_cpp</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry10a.o(.ARM.Collect$$$$0000000D))
+
+<P><STRONG><a name="[95]"></a>__rt_final_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry11a.o(.ARM.Collect$$$$0000000F))
+
+<P><STRONG><a name="[96]"></a>__aeabi_uidiv</STRONG> (Thumb, 0 bytes, Stack size 12 bytes, uidiv.o(.text), UNUSED)
+
+<P><STRONG><a name="[8e]"></a>__aeabi_uidivmod</STRONG> (Thumb, 44 bytes, Stack size 12 bytes, uidiv.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+</UL>
+
+<P><STRONG><a name="[13]"></a>__aeabi_uldivmod</STRONG> (Thumb, 98 bytes, Stack size 40 bytes, uldiv.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsr
+<LI><a href="#[15]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsl
+</UL>
+<BR>[Called By]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
+</UL>
+
+<P><STRONG><a name="[97]"></a>__I$use$fp</STRONG> (Thumb, 0 bytes, Stack size 48 bytes, iusefp.o(.text), UNUSED)
+
+<P><STRONG><a name="[16]"></a>__aeabi_dadd</STRONG> (Thumb, 322 bytes, Stack size 48 bytes, dadd.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = __aeabi_dadd &rArr; _double_epilogue &rArr; _double_round
+</UL>
+<BR>[Calls]<UL><LI><a href="#[17]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_lasr
+<LI><a href="#[15]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsl
+<LI><a href="#[19]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_round
+<LI><a href="#[18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
+</UL>
+<BR>[Called By]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;User_VOFA_Example
+<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__kernel_poly
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__kernel_sin
+<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ieee754_rem_pio2
+<LI><a href="#[1a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dsub
+<LI><a href="#[1b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_drsub
+<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
+</UL>
+
+<P><STRONG><a name="[1a]"></a>__aeabi_dsub</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, dadd.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = __aeabi_dsub &rArr; __aeabi_dadd &rArr; _double_epilogue &rArr; _double_round
+</UL>
+<BR>[Calls]<UL><LI><a href="#[16]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+</UL>
+<BR>[Called By]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__kernel_sin
+<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ieee754_rem_pio2
+<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__kernel_cos
+<LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_SYSCTRL_Pll0Cfg
+</UL>
+
+<P><STRONG><a name="[1b]"></a>__aeabi_drsub</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, dadd.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = __aeabi_drsub &rArr; __aeabi_dadd &rArr; _double_epilogue &rArr; _double_round
+</UL>
+<BR>[Calls]<UL><LI><a href="#[16]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+</UL>
+<BR>[Called By]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__kernel_sin
+<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ieee754_rem_pio2
+<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__kernel_cos
+</UL>
+
+<P><STRONG><a name="[1c]"></a>__aeabi_dmul</STRONG> (Thumb, 228 bytes, Stack size 48 bytes, dmul.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = __aeabi_dmul &rArr; _double_epilogue &rArr; _double_round
+</UL>
+<BR>[Calls]<UL><LI><a href="#[18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
+</UL>
+<BR>[Called By]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__kernel_poly
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__kernel_sin
+<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ieee754_rem_pio2
+<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__kernel_cos
+<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
+<LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_SYSCTRL_Pll0Cfg
+</UL>
+
+<P><STRONG><a name="[1d]"></a>__aeabi_ddiv</STRONG> (Thumb, 222 bytes, Stack size 32 bytes, ddiv.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = __aeabi_ddiv &rArr; _double_round
+</UL>
+<BR>[Calls]<UL><LI><a href="#[19]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_round
+</UL>
+<BR>[Called By]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__mathlib_dbl_invalid
+<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
+<LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_SYSCTRL_Pll0Cfg
+</UL>
+
+<P><STRONG><a name="[1e]"></a>__aeabi_d2ulz</STRONG> (Thumb, 48 bytes, Stack size 0 bytes, dfixul.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsr
+<LI><a href="#[15]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsl
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
+</UL>
+
+<P><STRONG><a name="[8b]"></a>__aeabi_cdrcmple</STRONG> (Thumb, 48 bytes, Stack size 0 bytes, cdrcmple.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
+</UL>
+
+<P><STRONG><a name="[12]"></a>__scatterload</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, init.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main_after_scatterload
+</UL>
+<BR>[Called By]<UL><LI><a href="#[11]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_main_scatterload
+</UL>
+
+<P><STRONG><a name="[98]"></a>__scatterload_rt2</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, init.o(.text), UNUSED)
+
+<P><STRONG><a name="[15]"></a>__aeabi_llsl</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, llshl.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
+<LI><a href="#[13]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
+<LI><a href="#[16]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+<LI><a href="#[1e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2ulz
+</UL>
+
+<P><STRONG><a name="[99]"></a>_ll_shift_l</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llshl.o(.text), UNUSED)
+
+<P><STRONG><a name="[14]"></a>__aeabi_llsr</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, llushr.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
+<LI><a href="#[13]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
+<LI><a href="#[22]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2iz
+<LI><a href="#[1e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2ulz
+</UL>
+
+<P><STRONG><a name="[9a]"></a>_ll_ushift_r</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llushr.o(.text), UNUSED)
+
+<P><STRONG><a name="[17]"></a>__aeabi_lasr</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, llsshr.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[16]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+</UL>
+
+<P><STRONG><a name="[9b]"></a>_ll_sshift_r</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llsshr.o(.text), UNUSED)
+
+<P><STRONG><a name="[19]"></a>_double_round</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, depilogue.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = _double_round
+</UL>
+<BR>[Called By]<UL><LI><a href="#[18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
+<LI><a href="#[1d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ddiv
+<LI><a href="#[16]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+</UL>
+
+<P><STRONG><a name="[18]"></a>_double_epilogue</STRONG> (Thumb, 156 bytes, Stack size 32 bytes, depilogue.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = _double_epilogue &rArr; _double_round
+</UL>
+<BR>[Calls]<UL><LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsr
+<LI><a href="#[15]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsl
+<LI><a href="#[19]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_round
+</UL>
+<BR>[Called By]<UL><LI><a href="#[21]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ui2d
+<LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_i2d
+<LI><a href="#[1c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
+<LI><a href="#[16]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+</UL>
+
+<P><STRONG><a name="[82]"></a>__ARM_scalbn</STRONG> (Thumb, 46 bytes, Stack size 16 bytes, dscalb.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = __ARM_scalbn
+</UL>
+<BR>[Called By]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__kernel_sin
+<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ieee754_rem_pio2
+<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__mathlib_dbl_underflow
+<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__mathlib_dbl_infnan
+<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__kernel_cos
+</UL>
+
+<P><STRONG><a name="[9c]"></a>scalbn</STRONG> (Thumb, 0 bytes, Stack size 16 bytes, dscalb.o(.text), UNUSED)
+
+<P><STRONG><a name="[20]"></a>__aeabi_i2d</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, dflti.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = __aeabi_i2d &rArr; _double_epilogue &rArr; _double_round
+</UL>
+<BR>[Calls]<UL><LI><a href="#[18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
+</UL>
+<BR>[Called By]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ieee754_rem_pio2
+<LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_SYSCTRL_Pll0Cfg
+</UL>
+
+<P><STRONG><a name="[21]"></a>__aeabi_ui2d</STRONG> (Thumb, 26 bytes, Stack size 16 bytes, dfltui.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = __aeabi_ui2d &rArr; _double_epilogue &rArr; _double_round
+</UL>
+<BR>[Calls]<UL><LI><a href="#[18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
+</UL>
+<BR>[Called By]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ieee754_rem_pio2
+<LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_SYSCTRL_Pll0Cfg
+</UL>
+
+<P><STRONG><a name="[22]"></a>__aeabi_d2iz</STRONG> (Thumb, 62 bytes, Stack size 16 bytes, dfixi.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = __aeabi_d2iz
+</UL>
+<BR>[Calls]<UL><LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsr
+</UL>
+<BR>[Called By]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ieee754_rem_pio2
+<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__kernel_cos
+<LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_SYSCTRL_Pll0Cfg
+</UL>
+
+<P><STRONG><a name="[78]"></a>__aeabi_memcpy</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, memcpya.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;User_VOFA_Example
+</UL>
+
+<P><STRONG><a name="[9d]"></a>__aeabi_memcpy4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memcpya.o(.text), UNUSED)
+
+<P><STRONG><a name="[9e]"></a>__aeabi_memcpy8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memcpya.o(.text), UNUSED)
+
+<P><STRONG><a name="[24]"></a>__aeabi_memset</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[25]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_memset$wrapper
+<LI><a href="#[23]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
+</UL>
+
+<P><STRONG><a name="[9f]"></a>__aeabi_memset4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+
+<P><STRONG><a name="[a0]"></a>__aeabi_memset8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+
+<P><STRONG><a name="[23]"></a>__aeabi_memclr</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memset
+</UL>
+
+<P><STRONG><a name="[74]"></a>__aeabi_memclr4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;User_TMR_IC_Init
+</UL>
+
+<P><STRONG><a name="[a1]"></a>__aeabi_memclr8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+
+<P><STRONG><a name="[25]"></a>_memset$wrapper</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, memseta.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memset
+</UL>
+
+<P><STRONG><a name="[7a]"></a>__aeabi_f2d</STRONG> (Thumb, 38 bytes, Stack size 0 bytes, f2d.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;User_VOFA_Example
+</UL>
+
+<P><STRONG><a name="[7c]"></a>__aeabi_d2f</STRONG> (Thumb, 56 bytes, Stack size 8 bytes, d2f.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = __aeabi_d2f
+</UL>
+<BR>[Called By]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;User_VOFA_Example
+</UL>
+
+<P><STRONG><a name="[a2]"></a>_float_round</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, fepilogue.o(.text), UNUSED)
+
+<P><STRONG><a name="[a3]"></a>_float_epilogue</STRONG> (Thumb, 92 bytes, Stack size 4 bytes, fepilogue.o(.text), UNUSED)
+
+<P><STRONG><a name="[f]"></a>fputc</STRONG> (Thumb, 22 bytes, Stack size 16 bytes, lto-llvm-03aa78.o(.text.fputc))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = fputc &rArr; User_Debug_PutChar &rArr; ITM_SendChar
+</UL>
+<BR>[Calls]<UL><LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;User_Debug_PutChar
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> printfa.o(i.__0printf)
+</UL>
+<P><STRONG><a name="[e]"></a>main</STRONG> (Thumb, 28 bytes, Stack size 16 bytes, lto-llvm-03aa78.o(.text.main))
+<BR><BR>[Stack]<UL><LI>Max Depth = 424<LI>Call Chain = main &rArr; User_VOFA_Example &rArr; sin &rArr; __ieee754_rem_pio2 &rArr; __aeabi_dsub &rArr; __aeabi_dadd &rArr; _double_epilogue &rArr; _double_round
+</UL>
+<BR>[Calls]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;User_VOFA_Example
+<LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;User_Debug_Init
+<LI><a href="#[2f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_Init
+<LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemClock_Config
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> entry9a.o(.ARM.Collect$$$$0000000B)
+</UL>
+<P><STRONG><a name="[7f]"></a>__0printf</STRONG> (Thumb, 22 bytes, Stack size 24 bytes, printfa.o(i.__0printf), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+</UL>
+
+<P><STRONG><a name="[a4]"></a>__1printf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printfa.o(i.__0printf), UNUSED)
+
+<P><STRONG><a name="[a5]"></a>__2printf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printfa.o(i.__0printf), UNUSED)
+
+<P><STRONG><a name="[a6]"></a>__c89printf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printfa.o(i.__0printf), UNUSED)
+
+<P><STRONG><a name="[27]"></a>printf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printfa.o(i.__0printf))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = printf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
+<LI><a href="#[45]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_SYSCTRL_EFLASH_ClkCfg
+<LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_SYSCTRL_SysclkInit
+<LI><a href="#[47]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_SYSCTRL_XOSCCfg
+<LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_SYSCTRL_Pll0Cfg
+<LI><a href="#[26]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_FPLL_DivStart
+<LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_TMR_IC_CaptureCallback
+<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;User_VOFA_SendWaveData
+<LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;User_VOFA_SendBoardData
+</UL>
+
+<P><STRONG><a name="[86]"></a>__ARM_fpclassify</STRONG> (Thumb, 40 bytes, Stack size 0 bytes, fpclassify.o(i.__ARM_fpclassify))
+<BR><BR>[Called By]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__kernel_sin
+</UL>
+
+<P><STRONG><a name="[81]"></a>__ieee754_rem_pio2</STRONG> (Thumb, 828 bytes, Stack size 128 bytes, rred.o(i.__ieee754_rem_pio2))
+<BR><BR>[Stack]<UL><LI>Max Depth = 216<LI>Call Chain = __ieee754_rem_pio2 &rArr; __aeabi_dsub &rArr; __aeabi_dadd &rArr; _double_epilogue &rArr; _double_round
+</UL>
+<BR>[Calls]<UL><LI><a href="#[21]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ui2d
+<LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_i2d
+<LI><a href="#[1a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dsub
+<LI><a href="#[1b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_drsub
+<LI><a href="#[22]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2iz
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_scalbn
+<LI><a href="#[1c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
+<LI><a href="#[16]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sin
+<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cos
+</UL>
+
+<P><STRONG><a name="[83]"></a>__kernel_cos</STRONG> (Thumb, 230 bytes, Stack size 48 bytes, cos_i.o(i.__kernel_cos))
+<BR><BR>[Stack]<UL><LI>Max Depth = 160<LI>Call Chain = __kernel_cos &rArr; __kernel_poly &rArr; __aeabi_dmul &rArr; _double_epilogue &rArr; _double_round
+</UL>
+<BR>[Calls]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__kernel_poly
+<LI><a href="#[1a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dsub
+<LI><a href="#[1b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_drsub
+<LI><a href="#[22]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2iz
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_scalbn
+<LI><a href="#[1c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sin
+<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cos
+</UL>
+
+<P><STRONG><a name="[84]"></a>__kernel_poly</STRONG> (Thumb, 170 bytes, Stack size 24 bytes, poly.o(i.__kernel_poly))
+<BR><BR>[Stack]<UL><LI>Max Depth = 112<LI>Call Chain = __kernel_poly &rArr; __aeabi_dmul &rArr; _double_epilogue &rArr; _double_round
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
+<LI><a href="#[16]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+</UL>
+<BR>[Called By]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__kernel_sin
+<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__kernel_cos
+</UL>
+
+<P><STRONG><a name="[85]"></a>__kernel_sin</STRONG> (Thumb, 224 bytes, Stack size 64 bytes, sin_i.o(i.__kernel_sin))
+<BR><BR>[Stack]<UL><LI>Max Depth = 176<LI>Call Chain = __kernel_sin &rArr; __kernel_poly &rArr; __aeabi_dmul &rArr; _double_epilogue &rArr; _double_round
+</UL>
+<BR>[Calls]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__kernel_poly
+<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_fpclassify
+<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__mathlib_dbl_underflow
+<LI><a href="#[1a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dsub
+<LI><a href="#[1b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_drsub
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_scalbn
+<LI><a href="#[1c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
+<LI><a href="#[16]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sin
+<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cos
+</UL>
+
+<P><STRONG><a name="[88]"></a>__mathlib_dbl_infnan</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, dunder.o(i.__mathlib_dbl_infnan))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = __mathlib_dbl_infnan &rArr; __ARM_scalbn
+</UL>
+<BR>[Calls]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_scalbn
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sin
+<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cos
+</UL>
+
+<P><STRONG><a name="[89]"></a>__mathlib_dbl_invalid</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, dunder.o(i.__mathlib_dbl_invalid))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = __mathlib_dbl_invalid &rArr; __aeabi_ddiv &rArr; _double_round
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ddiv
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sin
+<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cos
+</UL>
+
+<P><STRONG><a name="[87]"></a>__mathlib_dbl_underflow</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, dunder.o(i.__mathlib_dbl_underflow))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = __mathlib_dbl_underflow &rArr; __ARM_scalbn
+</UL>
+<BR>[Calls]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_scalbn
+</UL>
+<BR>[Called By]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__kernel_sin
+</UL>
+
+<P><STRONG><a name="[a7]"></a>__scatterload_copy</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_copy), UNUSED)
+
+<P><STRONG><a name="[a8]"></a>__scatterload_null</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_null), UNUSED)
+
+<P><STRONG><a name="[a9]"></a>__scatterload_zeroinit</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_zeroinit), UNUSED)
+
+<P><STRONG><a name="[8f]"></a>__set_errno</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, errno.o(i.__set_errno))
+<BR><BR>[Called By]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sin
+<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cos
+</UL>
+
+<P><STRONG><a name="[7d]"></a>cos</STRONG> (Thumb, 148 bytes, Stack size 32 bytes, cos.o(i.cos))
+<BR><BR>[Stack]<UL><LI>Max Depth = 248<LI>Call Chain = cos &rArr; __ieee754_rem_pio2 &rArr; __aeabi_dsub &rArr; __aeabi_dadd &rArr; _double_epilogue &rArr; _double_round
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__set_errno
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__kernel_sin
+<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ieee754_rem_pio2
+<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__mathlib_dbl_invalid
+<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__mathlib_dbl_infnan
+<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__kernel_cos
+</UL>
+<BR>[Called By]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;User_VOFA_Example
+</UL>
+
+<P><STRONG><a name="[7b]"></a>sin</STRONG> (Thumb, 150 bytes, Stack size 32 bytes, sin.o(i.sin))
+<BR><BR>[Stack]<UL><LI>Max Depth = 248<LI>Call Chain = sin &rArr; __ieee754_rem_pio2 &rArr; __aeabi_dsub &rArr; __aeabi_dadd &rArr; _double_epilogue &rArr; _double_round
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__set_errno
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__kernel_sin
+<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ieee754_rem_pio2
+<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__mathlib_dbl_invalid
+<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__mathlib_dbl_infnan
+<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__kernel_cos
+</UL>
+<BR>[Called By]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;User_VOFA_Example
+</UL>
+<P>
+<H3>
+Local Symbols
+</H3>
+<P><STRONG><a name="[8a]"></a>_fp_digits</STRONG> (Thumb, 366 bytes, Stack size 64 bytes, printfa.o(i._fp_digits), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[13]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
+<LI><a href="#[1c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
+<LI><a href="#[1d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ddiv
+<LI><a href="#[16]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+<LI><a href="#[1e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2ulz
+<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_cdrcmple
+</UL>
+<BR>[Called By]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+</UL>
+
+<P><STRONG><a name="[80]"></a>_printf_core</STRONG> (Thumb, 1744 bytes, Stack size 136 bytes, printfa.o(i._printf_core), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[13]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
+<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidivmod
+<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_pre_padding
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_post_padding
+<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__0printf
+</UL>
+
+<P><STRONG><a name="[8d]"></a>_printf_post_padding</STRONG> (Thumb, 36 bytes, Stack size 24 bytes, printfa.o(i._printf_post_padding), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+</UL>
+
+<P><STRONG><a name="[8c]"></a>_printf_pre_padding</STRONG> (Thumb, 46 bytes, Stack size 24 bytes, printfa.o(i._printf_pre_padding), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+</UL>
+
+<P><STRONG><a name="[6d]"></a>SystemClock_Config</STRONG> (Thumb, 84 bytes, Stack size 32 bytes, lto-llvm-03aa78.o(.text.SystemClock_Config))
+<BR><BR>[Stack]<UL><LI>Max Depth = 216<LI>Call Chain = SystemClock_Config &rArr; LL_SYSCTRL_SysclkInit &rArr; LL_SYSCTRL_Pll0Cfg &rArr; __aeabi_dsub &rArr; __aeabi_dadd &rArr; _double_epilogue &rArr; _double_round
+</UL>
+<BR>[Calls]<UL><LI><a href="#[45]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_SYSCTRL_EFLASH_ClkCfg
+<LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemCoreClockUpdate
+<LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_SYSCTRL_SysclkInit
+<LI><a href="#[28]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_FPLL_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[2f]"></a>LL_Init</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, lto-llvm-03aa78.o(.text.LL_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = LL_Init &rArr; LL_InitTick &rArr; LL_NVIC_SetPriority &rArr; assert_failed &rArr; printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[32]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_MspInit
+<LI><a href="#[31]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_InitTick
+<LI><a href="#[30]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_NVIC_SetPriorityGrouping
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[70]"></a>User_Debug_Init</STRONG> (Thumb, 166 bytes, Stack size 40 bytes, lto-llvm-03aa78.o(.text.User_Debug_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 160<LI>Call Chain = User_Debug_Init &rArr; LL_UART_Init &rArr; LL_UART_MspInit &rArr; LL_GPIO_Init &rArr; assert_failed &rArr; printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_UART_Init
+<LI><a href="#[2d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_GPIO_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[75]"></a>User_VOFA_Example</STRONG> (Thumb, 526 bytes, Stack size 160 bytes, lto-llvm-03aa78.o(.text.User_VOFA_Example))
+<BR><BR>[Stack]<UL><LI>Max Depth = 408<LI>Call Chain = User_VOFA_Example &rArr; sin &rArr; __ieee754_rem_pio2 &rArr; __aeabi_dsub &rArr; __aeabi_dadd &rArr; _double_epilogue &rArr; _double_round
+</UL>
+<BR>[Calls]<UL><LI><a href="#[16]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sin
+<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cos
+<LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2f
+<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2d
+<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;User_VOFA_SendWaveData
+<LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;User_VOFA_SendBoardData
+<LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;User_VOFA_RecvBoardData
+<LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_TMR_Start_IT
+<LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;User_TMR_IC_Init
+<LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_UART_Receive_IT
+<LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[28]"></a>LL_FPLL_Init</STRONG> (Thumb, 24 bytes, Stack size 16 bytes, lto-llvm-03aa78.o(.text.LL_FPLL_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = LL_FPLL_Init &rArr; LL_FPLL_MspInit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[29]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_FPLL_MspInit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemClock_Config
+</UL>
+
+<P><STRONG><a name="[48]"></a>LL_SYSCTRL_SysclkInit</STRONG> (Thumb, 902 bytes, Stack size 40 bytes, lto-llvm-03aa78.o(.text.LL_SYSCTRL_SysclkInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 184<LI>Call Chain = LL_SYSCTRL_SysclkInit &rArr; LL_SYSCTRL_Pll0Cfg &rArr; __aeabi_dsub &rArr; __aeabi_dadd &rArr; _double_epilogue &rArr; _double_round
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
+<LI><a href="#[27]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printf
+<LI><a href="#[47]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_SYSCTRL_XOSCCfg
+<LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_SYSCTRL_Pll0Cfg
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemClock_Config
+</UL>
+
+<P><STRONG><a name="[6e]"></a>SystemCoreClockUpdate</STRONG> (Thumb, 28 bytes, Stack size 4 bytes, lto-llvm-03aa78.o(.text.SystemCoreClockUpdate))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = SystemCoreClockUpdate
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemClock_Config
+</UL>
+
+<P><STRONG><a name="[45]"></a>LL_SYSCTRL_EFLASH_ClkCfg</STRONG> (Thumb, 172 bytes, Stack size 16 bytes, lto-llvm-03aa78.o(.text.LL_SYSCTRL_EFLASH_ClkCfg))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = LL_SYSCTRL_EFLASH_ClkCfg &rArr; printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[27]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemClock_Config
+</UL>
+
+<P><STRONG><a name="[2e]"></a>assert_failed</STRONG> (Thumb, 56 bytes, Stack size 16 bytes, lto-llvm-03aa78.o(.text.assert_failed))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = assert_failed &rArr; printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[27]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_TMR_IRQHandler
+<LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_SYSCTRL_SysclkInit
+<LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TMR_EXT_SetConfig
+<LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TMR_OC_SetConfig
+<LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TMR_IC_SetConfig
+<LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TMR_TB_SetConfig
+<LI><a href="#[35]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_NVIC_SetPriority
+<LI><a href="#[30]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_NVIC_SetPriorityGrouping
+<LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_TMR_Init
+<LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_TMR_Start_IT
+<LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_UART_Receive_IT
+<LI><a href="#[2d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_GPIO_Init
+<LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_NVIC_EnableIRQ
+</UL>
+
+<P><STRONG><a name="[1]"></a>NMI_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, lto-llvm-03aa78.o(.text.NMI_Handler))
+<BR>[Address Reference Count : 1]<UL><LI> lto-llvm-03aa78.o(RESET)
+</UL>
+<P><STRONG><a name="[2]"></a>HardFault_Handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, lto-llvm-03aa78.o(.text.HardFault_Handler))
+<BR>[Address Reference Count : 1]<UL><LI> lto-llvm-03aa78.o(RESET)
+</UL>
+<P><STRONG><a name="[d]"></a>TMR0_IRQHandler</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, lto-llvm-03aa78.o(.text.TMR0_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = TMR0_IRQHandler &rArr; LL_TMR_IRQHandler &rArr; assert_failed &rArr; printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[4b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_TMR_IRQHandler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> lto-llvm-03aa78.o(RESET)
+</UL>
+<P><STRONG><a name="[4b]"></a>LL_TMR_IRQHandler</STRONG> (Thumb, 400 bytes, Stack size 16 bytes, lto-llvm-03aa78.o(.text.LL_TMR_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = LL_TMR_IRQHandler &rArr; assert_failed &rArr; printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
+<LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_TMR_OC_CompareMatchedCallback
+<LI><a href="#[4e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_TMR_IC_OverCaptureCallback
+<LI><a href="#[4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_TMR_TB_UpdateCallback
+<LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_TMR_IC_CaptureCallback
+<LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_TMR_TB_OverflowCallback
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TMR0_IRQHandler
+</UL>
+
+<P><STRONG><a name="[3]"></a>MemManage_Handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, lto-llvm-03aa78.o(.text.MemManage_Handler))
+<BR>[Address Reference Count : 1]<UL><LI> lto-llvm-03aa78.o(RESET)
+</UL>
+<P><STRONG><a name="[4]"></a>BusFault_Handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, lto-llvm-03aa78.o(.text.BusFault_Handler))
+<BR>[Address Reference Count : 1]<UL><LI> lto-llvm-03aa78.o(RESET)
+</UL>
+<P><STRONG><a name="[5]"></a>UsageFault_Handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, lto-llvm-03aa78.o(.text.UsageFault_Handler))
+<BR>[Address Reference Count : 1]<UL><LI> lto-llvm-03aa78.o(RESET)
+</UL>
+<P><STRONG><a name="[6]"></a>SVC_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, lto-llvm-03aa78.o(.text.SVC_Handler))
+<BR>[Address Reference Count : 1]<UL><LI> lto-llvm-03aa78.o(RESET)
+</UL>
+<P><STRONG><a name="[7]"></a>DebugMon_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, lto-llvm-03aa78.o(.text.DebugMon_Handler))
+<BR>[Address Reference Count : 1]<UL><LI> lto-llvm-03aa78.o(RESET)
+</UL>
+<P><STRONG><a name="[8]"></a>PendSV_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, lto-llvm-03aa78.o(.text.PendSV_Handler))
+<BR>[Address Reference Count : 1]<UL><LI> lto-llvm-03aa78.o(RESET)
+</UL>
+<P><STRONG><a name="[9]"></a>SysTick_Handler</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, lto-llvm-03aa78.o(.text.SysTick_Handler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = SysTick_Handler &rArr; LL_SYSTICK_IRQHandler
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_SYSTICK_IRQHandler
+<LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_IncTick
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> lto-llvm-03aa78.o(RESET)
+</UL>
+<P><STRONG><a name="[6b]"></a>LL_IncTick</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, lto-llvm-03aa78.o(.text.LL_IncTick))
+<BR><BR>[Called By]<UL><LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Handler
+</UL>
+
+<P><STRONG><a name="[6c]"></a>LL_SYSTICK_IRQHandler</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, lto-llvm-03aa78.o(.text.LL_SYSTICK_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = LL_SYSTICK_IRQHandler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Handler
+</UL>
+
+<P><STRONG><a name="[b]"></a>UART0_IRQHandler</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, lto-llvm-03aa78.o(.text.UART0_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 44<LI>Call Chain = UART0_IRQHandler &rArr; LL_UART_IRQHandler &rArr; LL_UART_RxLineStaCallback &rArr; LL_UART_RxOverrunErrCallback
+</UL>
+<BR>[Calls]<UL><LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_UART_IRQHandler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> lto-llvm-03aa78.o(RESET)
+</UL>
+<P><STRONG><a name="[59]"></a>LL_UART_IRQHandler</STRONG> (Thumb, 104 bytes, Stack size 16 bytes, lto-llvm-03aa78.o(.text.LL_UART_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = LL_UART_IRQHandler &rArr; LL_UART_RxLineStaCallback &rArr; LL_UART_RxOverrunErrCallback
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_UART_CharTimeOutCallback
+<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_UART_BusyDetCallback
+<LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_UART_RxLineStaCallback
+<LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_UART_RxAvailableCallback
+<LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_UART_TxEmptyCallback
+<LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_UART_ModemStaCallback
+<LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_UART_RxDefaultCallback
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART1_IRQHandler
+<LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART0_IRQHandler
+</UL>
+
+<P><STRONG><a name="[c]"></a>UART1_IRQHandler</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, lto-llvm-03aa78.o(.text.UART1_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 44<LI>Call Chain = UART1_IRQHandler &rArr; LL_UART_IRQHandler &rArr; LL_UART_RxLineStaCallback &rArr; LL_UART_RxOverrunErrCallback
+</UL>
+<BR>[Calls]<UL><LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_UART_IRQHandler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> lto-llvm-03aa78.o(RESET)
+</UL>
+<P><STRONG><a name="[32]"></a>LL_MspInit</STRONG> (Thumb, 38 bytes, Stack size 8 bytes, lto-llvm-03aa78.o(.text.LL_MspInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = LL_MspInit &rArr; LL_NVIC_EnableIRQ &rArr; assert_failed &rArr; printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_SYSCTRL_GPIOB_ClkEnRstRelease
+<LI><a href="#[37]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_SYSCTRL_GPIOA_ClkEnRstRelease
+<LI><a href="#[36]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_SYSCTRL_PMUCfg
+<LI><a href="#[3d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_SYSCTRL_EFLASH_ClkEnRstRelease
+<LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_NVIC_EnableIRQ
+<LI><a href="#[3b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_SYSCTRL_DMA_ClkEnRstRelease
+<LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_SYSCTRL_GPIOD_ClkEnRstRelease
+<LI><a href="#[39]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_SYSCTRL_GPIOC_ClkEnRstRelease
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_Init
+</UL>
+
+<P><STRONG><a name="[36]"></a>LL_SYSCTRL_PMUCfg</STRONG> (Thumb, 40 bytes, Stack size 0 bytes, lto-llvm-03aa78.o(.text.LL_SYSCTRL_PMUCfg))
+<BR><BR>[Called By]<UL><LI><a href="#[32]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_MspInit
+</UL>
+
+<P><STRONG><a name="[37]"></a>LL_SYSCTRL_GPIOA_ClkEnRstRelease</STRONG> (Thumb, 56 bytes, Stack size 0 bytes, lto-llvm-03aa78.o(.text.LL_SYSCTRL_GPIOA_ClkEnRstRelease))
+<BR><BR>[Called By]<UL><LI><a href="#[32]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_MspInit
+</UL>
+
+<P><STRONG><a name="[38]"></a>LL_SYSCTRL_GPIOB_ClkEnRstRelease</STRONG> (Thumb, 56 bytes, Stack size 0 bytes, lto-llvm-03aa78.o(.text.LL_SYSCTRL_GPIOB_ClkEnRstRelease))
+<BR><BR>[Called By]<UL><LI><a href="#[32]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_MspInit
+</UL>
+
+<P><STRONG><a name="[39]"></a>LL_SYSCTRL_GPIOC_ClkEnRstRelease</STRONG> (Thumb, 56 bytes, Stack size 0 bytes, lto-llvm-03aa78.o(.text.LL_SYSCTRL_GPIOC_ClkEnRstRelease))
+<BR><BR>[Called By]<UL><LI><a href="#[32]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_MspInit
+</UL>
+
+<P><STRONG><a name="[3a]"></a>LL_SYSCTRL_GPIOD_ClkEnRstRelease</STRONG> (Thumb, 56 bytes, Stack size 0 bytes, lto-llvm-03aa78.o(.text.LL_SYSCTRL_GPIOD_ClkEnRstRelease))
+<BR><BR>[Called By]<UL><LI><a href="#[32]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_MspInit
+</UL>
+
+<P><STRONG><a name="[3b]"></a>LL_SYSCTRL_DMA_ClkEnRstRelease</STRONG> (Thumb, 56 bytes, Stack size 0 bytes, lto-llvm-03aa78.o(.text.LL_SYSCTRL_DMA_ClkEnRstRelease))
+<BR><BR>[Called By]<UL><LI><a href="#[32]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_MspInit
+</UL>
+
+<P><STRONG><a name="[3c]"></a>LL_NVIC_EnableIRQ</STRONG> (Thumb, 48 bytes, Stack size 16 bytes, lto-llvm-03aa78.o(.text.LL_NVIC_EnableIRQ))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = LL_NVIC_EnableIRQ &rArr; assert_failed &rArr; printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
+<LI><a href="#[3e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__NVIC_EnableIRQ
+</UL>
+<BR>[Called By]<UL><LI><a href="#[32]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_MspInit
+<LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_TMR_MspInit
+<LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_UART_MspInit
+</UL>
+
+<P><STRONG><a name="[3d]"></a>LL_SYSCTRL_EFLASH_ClkEnRstRelease</STRONG> (Thumb, 72 bytes, Stack size 0 bytes, lto-llvm-03aa78.o(.text.LL_SYSCTRL_EFLASH_ClkEnRstRelease))
+<BR><BR>[Called By]<UL><LI><a href="#[32]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_MspInit
+</UL>
+
+<P><STRONG><a name="[29]"></a>LL_FPLL_MspInit</STRONG> (Thumb, 130 bytes, Stack size 16 bytes, lto-llvm-03aa78.o(.text.LL_FPLL_MspInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = LL_FPLL_MspInit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_SYSCTRL_FPLL2_RstRelease
+<LI><a href="#[2b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_SYSCTRL_FPLL1_RstRelease
+<LI><a href="#[2a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_SYSCTRL_FPLL0_RstRelease
+</UL>
+<BR>[Called By]<UL><LI><a href="#[28]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_FPLL_Init
+</UL>
+
+<P><STRONG><a name="[2a]"></a>LL_SYSCTRL_FPLL0_RstRelease</STRONG> (Thumb, 40 bytes, Stack size 0 bytes, lto-llvm-03aa78.o(.text.LL_SYSCTRL_FPLL0_RstRelease))
+<BR><BR>[Called By]<UL><LI><a href="#[29]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_FPLL_MspInit
+</UL>
+
+<P><STRONG><a name="[2b]"></a>LL_SYSCTRL_FPLL1_RstRelease</STRONG> (Thumb, 40 bytes, Stack size 0 bytes, lto-llvm-03aa78.o(.text.LL_SYSCTRL_FPLL1_RstRelease))
+<BR><BR>[Called By]<UL><LI><a href="#[29]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_FPLL_MspInit
+</UL>
+
+<P><STRONG><a name="[2c]"></a>LL_SYSCTRL_FPLL2_RstRelease</STRONG> (Thumb, 40 bytes, Stack size 0 bytes, lto-llvm-03aa78.o(.text.LL_SYSCTRL_FPLL2_RstRelease))
+<BR><BR>[Called By]<UL><LI><a href="#[29]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_FPLL_MspInit
+</UL>
+
+<P><STRONG><a name="[62]"></a>LL_UART_MspInit</STRONG> (Thumb, 204 bytes, Stack size 32 bytes, lto-llvm-03aa78.o(.text.LL_UART_MspInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = LL_UART_MspInit &rArr; LL_GPIO_Init &rArr; assert_failed &rArr; printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_SYSCTRL_UART1_ClkEnRstRelease
+<LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_SYSCTRL_UART0_ClkEnRstRelease
+<LI><a href="#[2d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_GPIO_Init
+<LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_NVIC_EnableIRQ
+</UL>
+<BR>[Called By]<UL><LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_UART_Init
+</UL>
+
+<P><STRONG><a name="[2d]"></a>LL_GPIO_Init</STRONG> (Thumb, 738 bytes, Stack size 24 bytes, lto-llvm-03aa78.o(.text.LL_GPIO_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = LL_GPIO_Init &rArr; assert_failed &rArr; printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
+</UL>
+<BR>[Called By]<UL><LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;User_Debug_Init
+<LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_TMR_MspInit
+<LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_UART_MspInit
+</UL>
+
+<P><STRONG><a name="[63]"></a>LL_SYSCTRL_UART0_ClkEnRstRelease</STRONG> (Thumb, 56 bytes, Stack size 0 bytes, lto-llvm-03aa78.o(.text.LL_SYSCTRL_UART0_ClkEnRstRelease))
+<BR><BR>[Called By]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_UART_MspInit
+</UL>
+
+<P><STRONG><a name="[64]"></a>LL_SYSCTRL_UART1_ClkEnRstRelease</STRONG> (Thumb, 56 bytes, Stack size 0 bytes, lto-llvm-03aa78.o(.text.LL_SYSCTRL_UART1_ClkEnRstRelease))
+<BR><BR>[Called By]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_UART_MspInit
+</UL>
+
+<P><STRONG><a name="[51]"></a>LL_TMR_MspInit</STRONG> (Thumb, 588 bytes, Stack size 24 bytes, lto-llvm-03aa78.o(.text.LL_TMR_MspInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = LL_TMR_MspInit &rArr; LL_GPIO_Init &rArr; assert_failed &rArr; printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_SYSCTRL_HSTMR_ClkEnRstRelease
+<LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_SYSCTRL_LSTMR_ClkEnRstRelease
+<LI><a href="#[2d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_GPIO_Init
+<LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_NVIC_EnableIRQ
+</UL>
+<BR>[Called By]<UL><LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_TMR_Init
+</UL>
+
+<P><STRONG><a name="[56]"></a>LL_SYSCTRL_LSTMR_ClkEnRstRelease</STRONG> (Thumb, 56 bytes, Stack size 0 bytes, lto-llvm-03aa78.o(.text.LL_SYSCTRL_LSTMR_ClkEnRstRelease))
+<BR><BR>[Called By]<UL><LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_TMR_MspInit
+</UL>
+
+<P><STRONG><a name="[57]"></a>LL_SYSCTRL_HSTMR_ClkEnRstRelease</STRONG> (Thumb, 56 bytes, Stack size 0 bytes, lto-llvm-03aa78.o(.text.LL_SYSCTRL_HSTMR_ClkEnRstRelease))
+<BR><BR>[Called By]<UL><LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_TMR_MspInit
+</UL>
+
+<P><STRONG><a name="[76]"></a>DMA_Init</STRONG> (Thumb, 118 bytes, Stack size 0 bytes, lto-llvm-03aa78.o(.text.DMA_Init))
+<BR><BR>[Called By]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;User_VOFA_Example
+</UL>
+
+<P><STRONG><a name="[65]"></a>LL_UART_Receive_IT</STRONG> (Thumb, 70 bytes, Stack size 16 bytes, lto-llvm-03aa78.o(.text.LL_UART_Receive_IT))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = LL_UART_Receive_IT &rArr; assert_failed &rArr; printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
+</UL>
+<BR>[Called By]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;User_VOFA_Example
+</UL>
+
+<P><STRONG><a name="[73]"></a>User_TMR_IC_Init</STRONG> (Thumb, 122 bytes, Stack size 64 bytes, lto-llvm-03aa78.o(.text.User_TMR_IC_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 168<LI>Call Chain = User_TMR_IC_Init &rArr; LL_TMR_Init &rArr; LL_TMR_MspInit &rArr; LL_GPIO_Init &rArr; assert_failed &rArr; printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
+<LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_TMR_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;User_VOFA_Example
+</UL>
+
+<P><STRONG><a name="[58]"></a>LL_TMR_Start_IT</STRONG> (Thumb, 242 bytes, Stack size 16 bytes, lto-llvm-03aa78.o(.text.LL_TMR_Start_IT))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = LL_TMR_Start_IT &rArr; assert_failed &rArr; printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
+</UL>
+<BR>[Called By]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;User_VOFA_Example
+</UL>
+
+<P><STRONG><a name="[77]"></a>User_VOFA_RecvBoardData</STRONG> (Thumb, 90 bytes, Stack size 12 bytes, lto-llvm-03aa78.o(.text.User_VOFA_RecvBoardData))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = User_VOFA_RecvBoardData
+</UL>
+<BR>[Called By]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;User_VOFA_Example
+</UL>
+
+<P><STRONG><a name="[79]"></a>User_VOFA_SendBoardData</STRONG> (Thumb, 108 bytes, Stack size 40 bytes, lto-llvm-03aa78.o(.text.User_VOFA_SendBoardData))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = User_VOFA_SendBoardData &rArr; printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[27]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;User_VOFA_Example
+</UL>
+
+<P><STRONG><a name="[7e]"></a>User_VOFA_SendWaveData</STRONG> (Thumb, 116 bytes, Stack size 16 bytes, lto-llvm-03aa78.o(.text.User_VOFA_SendWaveData))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = User_VOFA_SendWaveData &rArr; printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[27]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;User_VOFA_Example
+</UL>
+
+<P><STRONG><a name="[60]"></a>LL_UART_RxDefaultCallback</STRONG> (Thumb, 20 bytes, Stack size 4 bytes, lto-llvm-03aa78.o(.text.LL_UART_RxDefaultCallback))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = LL_UART_RxDefaultCallback
+</UL>
+<BR>[Called By]<UL><LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_UART_IRQHandler
+</UL>
+
+<P><STRONG><a name="[4d]"></a>LL_TMR_TB_OverflowCallback</STRONG> (Thumb, 22 bytes, Stack size 4 bytes, lto-llvm-03aa78.o(.text.LL_TMR_TB_OverflowCallback))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = LL_TMR_TB_OverflowCallback
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_TMR_IRQHandler
+</UL>
+
+<P><STRONG><a name="[50]"></a>LL_TMR_Init</STRONG> (Thumb, 284 bytes, Stack size 16 bytes, lto-llvm-03aa78.o(.text.LL_TMR_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = LL_TMR_Init &rArr; LL_TMR_MspInit &rArr; LL_GPIO_Init &rArr; assert_failed &rArr; printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
+<LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TMR_EXT_SetConfig
+<LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TMR_OC_SetConfig
+<LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TMR_IC_SetConfig
+<LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TMR_TB_SetConfig
+<LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_TMR_MspInit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;User_TMR_IC_Init
+</UL>
+
+<P><STRONG><a name="[4a]"></a>LL_TMR_IC_CaptureCallback</STRONG> (Thumb, 266 bytes, Stack size 16 bytes, lto-llvm-03aa78.o(.text.LL_TMR_IC_CaptureCallback))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = LL_TMR_IC_CaptureCallback &rArr; printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[27]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_TMR_IRQHandler
+</UL>
+
+<P><STRONG><a name="[30]"></a>LL_NVIC_SetPriorityGrouping</STRONG> (Thumb, 68 bytes, Stack size 16 bytes, lto-llvm-03aa78.o(.text.LL_NVIC_SetPriorityGrouping))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = LL_NVIC_SetPriorityGrouping &rArr; assert_failed &rArr; printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
+<LI><a href="#[42]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__NVIC_SetPriorityGrouping
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_Init
+</UL>
+
+<P><STRONG><a name="[31]"></a>LL_InitTick</STRONG> (Thumb, 78 bytes, Stack size 16 bytes, lto-llvm-03aa78.o(.text.LL_InitTick))
+<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = LL_InitTick &rArr; LL_NVIC_SetPriority &rArr; assert_failed &rArr; printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[35]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_NVIC_SetPriority
+<LI><a href="#[34]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_SYSTICK_Config
+<LI><a href="#[33]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_SYSCTRL_SysclkGet
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_Init
+</UL>
+
+<P><STRONG><a name="[33]"></a>LL_SYSCTRL_SysclkGet</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, lto-llvm-03aa78.o(.text.LL_SYSCTRL_SysclkGet))
+<BR><BR>[Called By]<UL><LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_SYSCTRL_AHBClkGet
+<LI><a href="#[31]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_InitTick
+</UL>
+
+<P><STRONG><a name="[34]"></a>LL_SYSTICK_Config</STRONG> (Thumb, 16 bytes, Stack size 16 bytes, lto-llvm-03aa78.o(.text.LL_SYSTICK_Config))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = LL_SYSTICK_Config &rArr; SysTick_Config &rArr; __NVIC_SetPriority
+</UL>
+<BR>[Calls]<UL><LI><a href="#[49]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Config
+</UL>
+<BR>[Called By]<UL><LI><a href="#[31]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_InitTick
+</UL>
+
+<P><STRONG><a name="[35]"></a>LL_NVIC_SetPriority</STRONG> (Thumb, 102 bytes, Stack size 24 bytes, lto-llvm-03aa78.o(.text.LL_NVIC_SetPriority))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = LL_NVIC_SetPriority &rArr; assert_failed &rArr; printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
+<LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__NVIC_SetPriority
+<LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_EncodePriority
+<LI><a href="#[3f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__NVIC_GetPriorityGrouping
+</UL>
+<BR>[Called By]<UL><LI><a href="#[31]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_InitTick
+</UL>
+
+<P><STRONG><a name="[42]"></a>__NVIC_SetPriorityGrouping</STRONG> (Thumb, 60 bytes, Stack size 12 bytes, lto-llvm-03aa78.o(.text.__NVIC_SetPriorityGrouping))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = __NVIC_SetPriorityGrouping
+</UL>
+<BR>[Called By]<UL><LI><a href="#[30]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_NVIC_SetPriorityGrouping
+</UL>
+
+<P><STRONG><a name="[3f]"></a>__NVIC_GetPriorityGrouping</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, lto-llvm-03aa78.o(.text.__NVIC_GetPriorityGrouping))
+<BR><BR>[Called By]<UL><LI><a href="#[35]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_NVIC_SetPriority
+</UL>
+
+<P><STRONG><a name="[40]"></a>NVIC_EncodePriority</STRONG> (Thumb, 98 bytes, Stack size 24 bytes, lto-llvm-03aa78.o(.text.NVIC_EncodePriority))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = NVIC_EncodePriority
+</UL>
+<BR>[Called By]<UL><LI><a href="#[35]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_NVIC_SetPriority
+</UL>
+
+<P><STRONG><a name="[41]"></a>__NVIC_SetPriority</STRONG> (Thumb, 66 bytes, Stack size 8 bytes, lto-llvm-03aa78.o(.text.__NVIC_SetPriority))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = __NVIC_SetPriority
+</UL>
+<BR>[Called By]<UL><LI><a href="#[49]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Config
+<LI><a href="#[35]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_NVIC_SetPriority
+</UL>
+
+<P><STRONG><a name="[3e]"></a>__NVIC_EnableIRQ</STRONG> (Thumb, 50 bytes, Stack size 4 bytes, lto-llvm-03aa78.o(.text.__NVIC_EnableIRQ))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = __NVIC_EnableIRQ
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_NVIC_EnableIRQ
+</UL>
+
+<P><STRONG><a name="[49]"></a>SysTick_Config</STRONG> (Thumb, 82 bytes, Stack size 16 bytes, lto-llvm-03aa78.o(.text.SysTick_Config))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = SysTick_Config &rArr; __NVIC_SetPriority
+</UL>
+<BR>[Calls]<UL><LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__NVIC_SetPriority
+</UL>
+<BR>[Called By]<UL><LI><a href="#[34]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_SYSTICK_Config
+</UL>
+
+<P><STRONG><a name="[26]"></a>LL_FPLL_DivStart</STRONG> (Thumb, 152 bytes, Stack size 24 bytes, lto-llvm-03aa78.o(.text.LL_FPLL_DivStart))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = LL_FPLL_DivStart &rArr; printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[27]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_SYSCTRL_Pll0Cfg
+</UL>
+
+<P><STRONG><a name="[46]"></a>LL_SYSCTRL_Pll0Cfg</STRONG> (Thumb, 1028 bytes, Stack size 56 bytes, lto-llvm-03aa78.o(.text.LL_SYSCTRL_Pll0Cfg))
+<BR><BR>[Stack]<UL><LI>Max Depth = 144<LI>Call Chain = LL_SYSCTRL_Pll0Cfg &rArr; __aeabi_dsub &rArr; __aeabi_dadd &rArr; _double_epilogue &rArr; _double_round
+</UL>
+<BR>[Calls]<UL><LI><a href="#[21]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ui2d
+<LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_i2d
+<LI><a href="#[1a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dsub
+<LI><a href="#[22]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2iz
+<LI><a href="#[1c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
+<LI><a href="#[1d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ddiv
+<LI><a href="#[27]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printf
+<LI><a href="#[47]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_SYSCTRL_XOSCCfg
+<LI><a href="#[26]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_FPLL_DivStart
+</UL>
+<BR>[Called By]<UL><LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_SYSCTRL_SysclkInit
+</UL>
+
+<P><STRONG><a name="[47]"></a>LL_SYSCTRL_XOSCCfg</STRONG> (Thumb, 84 bytes, Stack size 16 bytes, lto-llvm-03aa78.o(.text.LL_SYSCTRL_XOSCCfg))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = LL_SYSCTRL_XOSCCfg &rArr; printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[27]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_SYSCTRL_SysclkInit
+<LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_SYSCTRL_Pll0Cfg
+</UL>
+
+<P><STRONG><a name="[43]"></a>LL_SYSCTRL_AHBClkGet</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, lto-llvm-03aa78.o(.text.LL_SYSCTRL_AHBClkGet))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = LL_SYSCTRL_AHBClkGet
+</UL>
+<BR>[Calls]<UL><LI><a href="#[33]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_SYSCTRL_SysclkGet
+</UL>
+<BR>[Called By]<UL><LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_SYSCTRL_APB0ClkGet
+</UL>
+
+<P><STRONG><a name="[44]"></a>LL_SYSCTRL_APB0ClkGet</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, lto-llvm-03aa78.o(.text.LL_SYSCTRL_APB0ClkGet))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = LL_SYSCTRL_APB0ClkGet &rArr; LL_SYSCTRL_AHBClkGet
+</UL>
+<BR>[Calls]<UL><LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_SYSCTRL_AHBClkGet
+</UL>
+<BR>[Called By]<UL><LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_UART_Init
+</UL>
+
+<P><STRONG><a name="[6f]"></a>LL_SYSCTRL_CaliValLoad</STRONG> (Thumb, 404 bytes, Stack size 24 bytes, lto-llvm-03aa78.o(.text.LL_SYSCTRL_CaliValLoad))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = LL_SYSCTRL_CaliValLoad
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
+</UL>
+
+<P><STRONG><a name="[52]"></a>TMR_TB_SetConfig</STRONG> (Thumb, 312 bytes, Stack size 16 bytes, lto-llvm-03aa78.o(.text.TMR_TB_SetConfig))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = TMR_TB_SetConfig &rArr; assert_failed &rArr; printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
+</UL>
+<BR>[Called By]<UL><LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_TMR_Init
+</UL>
+
+<P><STRONG><a name="[53]"></a>TMR_IC_SetConfig</STRONG> (Thumb, 258 bytes, Stack size 16 bytes, lto-llvm-03aa78.o(.text.TMR_IC_SetConfig))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = TMR_IC_SetConfig &rArr; assert_failed &rArr; printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
+</UL>
+<BR>[Called By]<UL><LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_TMR_Init
+</UL>
+
+<P><STRONG><a name="[54]"></a>TMR_OC_SetConfig</STRONG> (Thumb, 368 bytes, Stack size 16 bytes, lto-llvm-03aa78.o(.text.TMR_OC_SetConfig))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = TMR_OC_SetConfig &rArr; assert_failed &rArr; printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
+</UL>
+<BR>[Called By]<UL><LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_TMR_Init
+</UL>
+
+<P><STRONG><a name="[55]"></a>TMR_EXT_SetConfig</STRONG> (Thumb, 214 bytes, Stack size 16 bytes, lto-llvm-03aa78.o(.text.TMR_EXT_SetConfig))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = TMR_EXT_SetConfig &rArr; assert_failed &rArr; printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
+</UL>
+<BR>[Called By]<UL><LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_TMR_Init
+</UL>
+
+<P><STRONG><a name="[4c]"></a>LL_TMR_TB_UpdateCallback</STRONG> (Thumb, 8 bytes, Stack size 4 bytes, lto-llvm-03aa78.o(.text.LL_TMR_TB_UpdateCallback))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = LL_TMR_TB_UpdateCallback
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_TMR_IRQHandler
+</UL>
+
+<P><STRONG><a name="[4e]"></a>LL_TMR_IC_OverCaptureCallback</STRONG> (Thumb, 8 bytes, Stack size 4 bytes, lto-llvm-03aa78.o(.text.LL_TMR_IC_OverCaptureCallback))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = LL_TMR_IC_OverCaptureCallback
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_TMR_IRQHandler
+</UL>
+
+<P><STRONG><a name="[4f]"></a>LL_TMR_OC_CompareMatchedCallback</STRONG> (Thumb, 8 bytes, Stack size 4 bytes, lto-llvm-03aa78.o(.text.LL_TMR_OC_CompareMatchedCallback))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = LL_TMR_OC_CompareMatchedCallback
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_TMR_IRQHandler
+</UL>
+
+<P><STRONG><a name="[61]"></a>LL_UART_Init</STRONG> (Thumb, 366 bytes, Stack size 24 bytes, lto-llvm-03aa78.o(.text.LL_UART_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = LL_UART_Init &rArr; LL_UART_MspInit &rArr; LL_GPIO_Init &rArr; assert_failed &rArr; printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_SYSCTRL_APB0ClkGet
+<LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_UART_MspInit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;User_Debug_Init
+</UL>
+
+<P><STRONG><a name="[5a]"></a>LL_UART_ModemStaCallback</STRONG> (Thumb, 8 bytes, Stack size 4 bytes, lto-llvm-03aa78.o(.text.LL_UART_ModemStaCallback))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = LL_UART_ModemStaCallback
+</UL>
+<BR>[Called By]<UL><LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_UART_IRQHandler
+</UL>
+
+<P><STRONG><a name="[5b]"></a>LL_UART_TxEmptyCallback</STRONG> (Thumb, 8 bytes, Stack size 4 bytes, lto-llvm-03aa78.o(.text.LL_UART_TxEmptyCallback))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = LL_UART_TxEmptyCallback
+</UL>
+<BR>[Called By]<UL><LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_UART_IRQHandler
+</UL>
+
+<P><STRONG><a name="[5c]"></a>LL_UART_RxAvailableCallback</STRONG> (Thumb, 8 bytes, Stack size 4 bytes, lto-llvm-03aa78.o(.text.LL_UART_RxAvailableCallback))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = LL_UART_RxAvailableCallback
+</UL>
+<BR>[Called By]<UL><LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_UART_IRQHandler
+</UL>
+
+<P><STRONG><a name="[5d]"></a>LL_UART_RxLineStaCallback</STRONG> (Thumb, 114 bytes, Stack size 16 bytes, lto-llvm-03aa78.o(.text.LL_UART_RxLineStaCallback))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = LL_UART_RxLineStaCallback &rArr; LL_UART_RxOverrunErrCallback
+</UL>
+<BR>[Calls]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_UART_RxOverrunErrCallback
+<LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_UART_ParityErrCallback
+<LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_UART_FrameErrCallback
+<LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_UART_BreakErrCallback
+</UL>
+<BR>[Called By]<UL><LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_UART_IRQHandler
+</UL>
+
+<P><STRONG><a name="[5e]"></a>LL_UART_BusyDetCallback</STRONG> (Thumb, 8 bytes, Stack size 4 bytes, lto-llvm-03aa78.o(.text.LL_UART_BusyDetCallback))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = LL_UART_BusyDetCallback
+</UL>
+<BR>[Called By]<UL><LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_UART_IRQHandler
+</UL>
+
+<P><STRONG><a name="[5f]"></a>LL_UART_CharTimeOutCallback</STRONG> (Thumb, 8 bytes, Stack size 4 bytes, lto-llvm-03aa78.o(.text.LL_UART_CharTimeOutCallback))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = LL_UART_CharTimeOutCallback
+</UL>
+<BR>[Called By]<UL><LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_UART_IRQHandler
+</UL>
+
+<P><STRONG><a name="[66]"></a>LL_UART_BreakErrCallback</STRONG> (Thumb, 8 bytes, Stack size 4 bytes, lto-llvm-03aa78.o(.text.LL_UART_BreakErrCallback))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = LL_UART_BreakErrCallback
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_UART_RxLineStaCallback
+</UL>
+
+<P><STRONG><a name="[67]"></a>LL_UART_FrameErrCallback</STRONG> (Thumb, 8 bytes, Stack size 4 bytes, lto-llvm-03aa78.o(.text.LL_UART_FrameErrCallback))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = LL_UART_FrameErrCallback
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_UART_RxLineStaCallback
+</UL>
+
+<P><STRONG><a name="[68]"></a>LL_UART_ParityErrCallback</STRONG> (Thumb, 8 bytes, Stack size 4 bytes, lto-llvm-03aa78.o(.text.LL_UART_ParityErrCallback))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = LL_UART_ParityErrCallback
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_UART_RxLineStaCallback
+</UL>
+
+<P><STRONG><a name="[69]"></a>LL_UART_RxOverrunErrCallback</STRONG> (Thumb, 8 bytes, Stack size 4 bytes, lto-llvm-03aa78.o(.text.LL_UART_RxOverrunErrCallback))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = LL_UART_RxOverrunErrCallback
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_UART_RxLineStaCallback
+</UL>
+
+<P><STRONG><a name="[0]"></a>Reset_Handler</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, lto-llvm-03aa78.o(.text.Reset_Handler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32 + Unknown Stack Size
+<LI>Call Chain = Reset_Handler &rArr; SystemInit &rArr; LL_SYSCTRL_CaliValLoad
+</UL>
+<BR>[Calls]<UL><LI><a href="#[10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main
+<LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> lto-llvm-03aa78.o(RESET)
+</UL>
+<P><STRONG><a name="[6a]"></a>SystemInit</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, lto-llvm-03aa78.o(.text.SystemInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = SystemInit &rArr; LL_SYSCTRL_CaliValLoad
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_SYSCTRL_CaliValLoad
+</UL>
+<BR>[Called By]<UL><LI><a href="#[0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Reset_Handler
+</UL>
+
+<P><STRONG><a name="[a]"></a>Default_Handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, lto-llvm-03aa78.o(.text.Default_Handler))
+<BR>[Address Reference Count : 1]<UL><LI> lto-llvm-03aa78.o(RESET)
+</UL>
+<P><STRONG><a name="[71]"></a>User_Debug_PutChar</STRONG> (Thumb, 106 bytes, Stack size 16 bytes, lto-llvm-03aa78.o(.text.User_Debug_PutChar))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = User_Debug_PutChar &rArr; ITM_SendChar
+</UL>
+<BR>[Calls]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ITM_SendChar
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fputc
+</UL>
+
+<P><STRONG><a name="[72]"></a>ITM_SendChar</STRONG> (Thumb, 66 bytes, Stack size 4 bytes, lto-llvm-03aa78.o(.text.ITM_SendChar))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = ITM_SendChar
+</UL>
+<BR>[Called By]<UL><LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;User_Debug_PutChar
+</UL>
+<P>
+<H3>
+Undefined Global Symbols
+</H3><HR></body></html>

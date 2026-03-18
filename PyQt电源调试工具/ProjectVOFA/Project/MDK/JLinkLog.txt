@@ -1,0 +1,78 @@
+T1A338 000:011.327   SEGGER J-Link V7.84a Log File
+T1A338 000:011.560   DLL Compiled: Dec 22 2022 16:06:18
+T1A338 000:011.578   Logging started @ 2023-01-06 09:43
+T1A338 000:011.595 - 11.604ms
+T1A338 000:011.621 JLINK_SetWarnOutHandler(...)
+T1A338 000:011.639 - 0.026ms
+T1A338 000:011.656 JLINK_OpenEx(...)
+T1A338 000:017.921   Firmware: J-Link V9 compiled Jun  2 2222 22:22:22
+T1A338 000:018.759   Firmware: J-Link V9 compiled Jun  2 2222 22:22:22
+T1A338 000:019.214   Decompressing FW timestamp took 297 us
+T1A338 000:028.163   Hardware: V9.40
+T1A338 000:028.265   S/N: 59401308
+T1A338 000:028.316   OEM: SEGGER
+T1A338 000:028.366   Feature(s): GDB, RDI, FlashBP, FlashDL, JFlash, RDDI
+T1A338 000:032.028   TELNET listener socket opened on port 19021
+T1A338 000:032.587   WEBSRV WEBSRV_Init(): Starting webserver thread(s)
+T1A338 000:032.969   WEBSRV Webserver running on local port 19080
+T1A338 000:052.456 - 40.870ms returns "O.K."
+T1A338 000:052.605 JLINK_GetEmuCaps()
+T1A338 000:052.645 - 0.059ms returns 0xB9FF7BBF
+T1A338 000:052.709 JLINK_TIF_GetAvailable(...)
+T1A338 000:053.289 - 0.608ms
+T1A338 000:053.349 JLINK_SetErrorOutHandler(...)
+T1A338 000:053.392 - 0.051ms
+T1A338 000:053.425 JLINK_ExecCommand("ProjectFile = "c:\Users\11841\Documents\svn\数字电源研发部\11_FAE\Wuwenzhan\TAE32F53xx_FW_ReleaseV1.4.7\ProjectTemplate\Project\MDK\JLinkSettings.ini"", ...). 
+T1A338 000:069.067   Ref file found at: C:\Keil_v5\ARM\Segger\JLinkDevices.ref
+T1A338 000:069.483   REF file references invalid XML file: C:\Program Files\SEGGER\JLink\JLinkDevices.xml
+T1A338 000:072.016   Device "NUC029TAE" selected.
+T1A338 000:072.899 - 19.504ms returns 0x00
+T1A338 000:074.756 JLINK_ExecCommand("Device = TAE32F5300", ...). 
+T1A338 000:076.044   Device "NUC029TAE" selected.
+T1A338 000:076.785 - 2.013ms returns 0x00
+T1A338 000:076.818 JLINK_ExecCommand("DisableConnectionTimeout", ...). 
+T1A338 000:076.839 - 0.010ms returns 0x01
+T1A338 000:076.857 JLINK_GetHardwareVersion()
+T1A338 000:076.874 - 0.025ms returns 94000
+T1A338 000:076.901 JLINK_GetDLLVersion()
+T1A338 000:076.917 - 0.024ms returns 78401
+T1A338 000:076.935 JLINK_GetOEMString(...)
+T1A338 000:077.002 JLINK_GetFirmwareString(...)
+T1A338 000:077.029 - 0.036ms
+T1A338 000:079.347 JLINK_GetDLLVersion()
+T1A338 000:079.373 - 0.034ms returns 78401
+T1A338 000:079.391 JLINK_GetCompileDateTime()
+T1A338 000:079.408 - 0.024ms
+T1A338 000:080.067 JLINK_GetFirmwareString(...)
+T1A338 000:080.094 - 0.036ms
+T1A338 000:080.486 JLINK_GetHardwareVersion()
+T1A338 000:080.505 - 0.027ms returns 94000
+T1A338 000:080.845 JLINK_GetSN()
+T1A338 000:081.085 - 0.251ms returns 59401308
+T1A338 000:083.820 JLINK_GetOEMString(...)
+T1A338 000:086.988 JLINK_TIF_Select(JLINKARM_TIF_JTAG)
+T1A338 000:089.898 - 3.035ms returns 0x00
+T1A338 000:090.048 JLINK_HasError()
+T1A338 000:090.074 JLINK_SetSpeed(5000)
+T1A338 000:090.443 - 0.413ms
+T1A338 000:090.507 JLINK_GetIdData(pIdData)
+T1A338 000:091.798   InitTarget() start
+T1A338 000:091.837    J-Link Script File: Executing InitTarget()
+T1A338 000:093.019   InitTarget()
+T1A338 000:109.490   Looking for J-Link GUI Server exe at: C:\Keil_v5\ARM\Segger\JLinkGUIServer.exe
+T1A338 000:109.851   Looking for J-Link GUI Server exe at: C:\Program Files\SEGGER\JLink\JLinkGUIServer.exe
+T1A338 000:109.949   Forking J-Link GUI Server: C:\Program Files\SEGGER\JLink\JLinkGUIServer.exe
+T1A338 000:164.209   J-Link GUI Server info: "J-Link GUI server V7.84a "
+T1A338 003:698.678   Device will be unsecured now.
+T1A338 060:092.418   InitTarget() end
+T1A338 060:092.701   Connect failed. Resetting via Reset pin and trying again.
+T1A338 060:156.859   InitTarget() start
+T1A338 060:156.893    J-Link Script File: Executing InitTarget()
+T1A338 060:157.123   InitTarget()
+T1A338 061:702.591   Device will be unsecured now.
+T1A338 120:157.863   InitTarget() end
+T1A338 120:157.944 - 120067.455ms
+T1A338 120:159.708 JLINK_Close()
+T1A338 120:178.808 - 19.175ms
+T1A338 120:178.905   
+T1A338 120:178.943   Closed

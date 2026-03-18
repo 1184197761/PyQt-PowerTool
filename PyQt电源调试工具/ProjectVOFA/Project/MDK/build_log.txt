@@ -1,0 +1,2 @@
+Load "C:\\Users\\11841\\Documents\\svn\\Digital_RAD_Power_Department\\11_FAE\\Wuwenzhan\\TAE32F53xx_FW_ReleaseV1.4.7\\ProjectTemplate\\Project\\MDK\\FLASH\\Objects\\Project.axf" 
+Erase Done.Programming Done.Verify OK.Flash Load finished at 19:05:49

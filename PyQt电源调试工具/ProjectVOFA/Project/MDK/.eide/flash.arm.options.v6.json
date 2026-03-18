@@ -1,0 +1,34 @@
+{
+    "version": 3,
+    "beforeBuildTasks": [],
+    "afterBuildTasks": [
+        {
+            "name": "After_Build",
+            "disable": false,
+            "abortAfterFailed": false,
+            "command": "${workspaceFolder}\\GCC_Tools\\GCC_AfterBuild.bat ${OutDir} ${ProjectName}"
+        }
+    ],
+    "global": {
+        "output-debug-info": "enable",
+        "use-microLIB": true
+    },
+    "c/cpp-compiler": {
+        "optimization": "level-0",
+        "language-c": "c99",
+        "language-cpp": "c++11",
+        "link-time-optimization": true,
+        "one-elf-section-per-function": true,
+        "short-enums#wchar": true,
+        "warnings": "ac5-like-warnings"
+    },
+    "asm-compiler": {
+        "$use": "asm-auto"
+    },
+    "linker": {
+        "output-format": "elf",
+        "misc-controls": "--diag_suppress=L6314W",
+        "ro-base": "0x00000000",
+        "rw-base": "0x20000000"
+    }
+}

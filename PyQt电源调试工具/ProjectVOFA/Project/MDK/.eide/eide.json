@@ -1,0 +1,343 @@
+{
+  "name": "Project",
+  "type": "ARM",
+  "dependenceList": [],
+  "srcDirs": [
+    ".eide/deps"
+  ],
+  "virtualFolder": {
+    "name": "<virtual_root>",
+    "files": [],
+    "folders": [
+      {
+        "name": "::CMSIS",
+        "files": [],
+        "folders": []
+      },
+      {
+        "name": "Documentation",
+        "files": [],
+        "folders": []
+      },
+      {
+        "name": "Drivers",
+        "files": [],
+        "folders": [
+          {
+            "name": "TAE_Device",
+            "files": [
+              {
+                "path": "../../../Drivers/TAE32F53xx_Device/Source/startup_tae32f53xx.c"
+              },
+              {
+                "path": "../../../Drivers/TAE32F53xx_Device/Source/system_tae32f53xx.c"
+              }
+            ],
+            "folders": []
+          },
+          {
+            "name": "TAE_Driver",
+            "files": [
+              {
+                "path": "../../../Drivers/TAE32F53xx_Driver/Src/tae32f53xx_ll_adc.c"
+              },
+              {
+                "path": "../../../Drivers/TAE32F53xx_Driver/Src/tae32f53xx_ll_can.c"
+              },
+              {
+                "path": "../../../Drivers/TAE32F53xx_Driver/Src/tae32f53xx_ll_cmp.c"
+              },
+              {
+                "path": "../../../Drivers/TAE32F53xx_Driver/Src/tae32f53xx_ll_cortex.c"
+              },
+              {
+                "path": "../../../Drivers/TAE32F53xx_Driver/Src/tae32f53xx_ll_dac.c"
+              },
+              {
+                "path": "../../../Drivers/TAE32F53xx_Driver/Src/tae32f53xx_ll_dali.c"
+              },
+              {
+                "path": "../../../Drivers/TAE32F53xx_Driver/Src/tae32f53xx_ll_dflash.c"
+              },
+              {
+                "path": "../../../Drivers/TAE32F53xx_Driver/Src/tae32f53xx_ll_dma.c"
+              },
+              {
+                "path": "../../../Drivers/TAE32F53xx_Driver/Src/tae32f53xx_ll_ecu.c"
+              },
+              {
+                "path": "../../../Drivers/TAE32F53xx_Driver/Src/tae32f53xx_ll_flash.c"
+              },
+              {
+                "path": "../../../Drivers/TAE32F53xx_Driver/Src/tae32f53xx_ll_fpll.c"
+              },
+              {
+                "path": "../../../Drivers/TAE32F53xx_Driver/Src/tae32f53xx_ll_gpio.c"
+              },
+              {
+                "path": "../../../Drivers/TAE32F53xx_Driver/Src/tae32f53xx_ll_hrpwm.c"
+              },
+              {
+                "path": "../../../Drivers/TAE32F53xx_Driver/Src/tae32f53xx_ll_i2c.c"
+              },
+              {
+                "path": "../../../Drivers/TAE32F53xx_Driver/Src/tae32f53xx_ll_iir.c"
+              },
+              {
+                "path": "../../../Drivers/TAE32F53xx_Driver/Src/tae32f53xx_ll_iwdg.c"
+              },
+              {
+                "path": "../../../Drivers/TAE32F53xx_Driver/Src/tae32f53xx_ll_lvdctrl.c"
+              },
+              {
+                "path": "../../../Drivers/TAE32F53xx_Driver/Src/tae32f53xx_ll_sysctrl.c"
+              },
+              {
+                "path": "../../../Drivers/TAE32F53xx_Driver/Src/tae32f53xx_ll_tmr.c"
+              },
+              {
+                "path": "../../../Drivers/TAE32F53xx_Driver/Src/tae32f53xx_ll_uart.c"
+              },
+              {
+                "path": "../../../Drivers/TAE32F53xx_Driver/Src/tae32f53xx_ll_usb.c"
+              },
+              {
+                "path": "../../../Drivers/TAE32F53xx_Driver/Src/tae32f53xx_ll_wwdg.c"
+              },
+              {
+                "path": "../../../Drivers/TAE32F53xx_Driver/Src/tae32f53xx_ll.c"
+              }
+            ],
+            "folders": []
+          }
+        ]
+      },
+      {
+        "name": "ProjectTemplate",
+        "files": [],
+        "folders": [
+          {
+            "name": "User",
+            "files": [
+              {
+                "path": "../../User/Source/main.c"
+              },
+              {
+                "path": "../../User/Source/tae32f53xx_it.c"
+              },
+              {
+                "path": "../../User/Source/tae32f53xx_ll_msp.c"
+              },
+              {
+                "path": "../../User/Source/user_tmr.c"
+              },
+              {
+                "path": "../../User/Source/user_vofa.c"
+              }
+            ],
+            "folders": []
+          }
+        ]
+      },
+      {
+        "name": "Utilities",
+        "files": [],
+        "folders": [
+          {
+            "name": "Debug",
+            "files": [
+              {
+                "path": "../../../Utilities/dbg/user_debug.c"
+              }
+            ],
+            "folders": []
+          }
+        ]
+      }
+    ]
+  },
+  "outDir": "build",
+  "deviceName": "TAE32F5300",
+  "packDir": ".pack/Tai-Action/TAE32F53xx_DFP.1.4.4",
+  "miscInfo": {
+    "uid": "115a53584fda1958233b3a0107a7a131"
+  },
+  "targets": {
+    "SRAM": {
+      "excludeList": [],
+      "toolchain": "GCC",
+      "compileConfig": {
+        "cpuType": "Cortex-M3",
+        "floatingPointHardware": "none",
+        "scatterFilePath": "..\\Eclipse\\LinkerScript\\gcc_arm-sram.ld",
+        "useCustomScatterFile": true,
+        "storageLayout": {
+          "RAM": [],
+          "ROM": []
+        },
+        "options": "null"
+      },
+      "uploader": "JLink",
+      "uploadConfig": {
+        "bin": "build\\SRAM\\Project_patched.hex",
+        "baseAddr": "",
+        "cpuInfo": {
+          "vendor": "TAE",
+          "cpuName": "TAE32F5300"
+        },
+        "proType": 1,
+        "speed": 8000,
+        "otherCmds": ""
+      },
+      "uploadConfigMap": {
+        "JLink": {
+          "bin": "build\\FLASH\\Project.hex",
+          "baseAddr": "",
+          "cpuInfo": {
+            "vendor": "null",
+            "cpuName": "null"
+          },
+          "proType": 1,
+          "speed": 8000,
+          "otherCmds": ""
+        },
+        "Custom": {
+          "bin": "",
+          "commandLine": "",
+          "eraseChipCommand": ""
+        },
+        "OpenOCD": {
+          "bin": "build\\FLASH\\Project.hex",
+          "target": "${workspaceFolder}/tae32f5300_eval",
+          "interface": "cmsis-dap",
+          "baseAddr": "0x08000000"
+        },
+        "pyOCD": {
+          "bin": "C:\\Users\\11841\\Desktop\\TAE32F53xx_FW_ReleaseV1.4.7\\ProjectTemplate\\Project\\MDK\\build\\FLASH\\Project.hex",
+          "targetName": "tae32f53xx",
+          "baseAddr": "0x08000000",
+          "speed": "4M",
+          "config": ".eide/flash.pyocd.yaml"
+        }
+      },
+      "custom_dep": {
+        "name": "default",
+        "incList": [
+          "../../../Drivers/TAE32F53xx_Device/Include",
+          "../../../Drivers/TAE32F53xx_Driver/Inc",
+          "../../User/Include",
+          "../../../Utilities",
+          "../../../Middlewares/TAE/TAE32F53xx_USB_Device_Library/Class/HID/Inc",
+          "../../../Middlewares/TAE/TAE32F53xx_USB_Device_Library/Core/Inc",
+          "RTE/_SRAM",
+          ".cmsis/include"
+        ],
+        "libList": [],
+        "sourceDirList": [],
+        "defineList": []
+      }
+    },
+    "FLASH": {
+      "excludeList": [],
+      "toolchain": "AC6",
+      "compileConfig": {
+        "cpuType": "Cortex-M3",
+        "floatingPointHardware": "none",
+        "useCustomScatterFile": true,
+        "scatterFilePath": "FLASH\\tae32f53xx_ac6_flash.sct",
+        "storageLayout": {
+          "RAM": [
+            {
+              "tag": "IRAM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x20000000",
+                "size": "0x5000"
+              },
+              "isChecked": true,
+              "noInit": false
+            }
+          ],
+          "ROM": [
+            {
+              "tag": "IROM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x08000000",
+                "size": "0x10000"
+              },
+              "isChecked": true,
+              "isStartup": true
+            }
+          ]
+        },
+        "options": "null"
+      },
+      "uploader": "Custom",
+      "uploadConfig": {
+        "bin": "",
+        "commandLine": "Project_build",
+        "eraseChipCommand": ""
+      },
+      "uploadConfigMap": {
+        "JLink": {
+          "bin": "build\\FLASH\\Project_patched.hex",
+          "baseAddr": "",
+          "cpuInfo": {
+            "vendor": "TAE",
+            "cpuName": "TAE32F5300"
+          },
+          "proType": 1,
+          "speed": 8000,
+          "otherCmds": ""
+        },
+        "Custom": {
+          "bin": "",
+          "commandLine": "",
+          "eraseChipCommand": ""
+        },
+        "OpenOCD": {
+          "bin": "build\\FLASH\\Project.hex",
+          "target": "${workspaceFolder}/tae32f5300_eval",
+          "interface": "cmsis-dap",
+          "baseAddr": "0x08000000"
+        },
+        "pyOCD": {
+          "bin": "C:\\Users\\11841\\Desktop\\TAE32F53xx_FW_ReleaseV1.4.7\\ProjectTemplate\\Project\\MDK\\build\\FLASH\\Project.hex",
+          "targetName": "tae32f53xx",
+          "baseAddr": "0x08000000",
+          "speed": "4M",
+          "config": ".eide/flash.pyocd.yaml"
+        },
+        "STLink": {
+          "bin": "",
+          "proType": "SWD",
+          "resetMode": "default",
+          "runAfterProgram": true,
+          "speed": 4000,
+          "address": "0x08000000",
+          "elFile": "None",
+          "optionBytes": ".eide/flash.st.option.bytes.ini",
+          "otherCmds": ""
+        }
+      },
+      "custom_dep": {
+        "name": "default",
+        "incList": [
+          "../../../Drivers/TAE32F53xx_Device/Include",
+          "../../../Drivers/TAE32F53xx_Driver/Inc",
+          "../../User/Include",
+          "../../../Utilities",
+          "../../../Middlewares/TM/TAE32F53xx_USB_Device_Library/Class/HID/Inc",
+          "../../../Middlewares/TM/TAE32F53xx_USB_Device_Library/Core/Inc",
+          "RTE/_FLASH",
+          ".cmsis/include"
+        ],
+        "libList": [],
+        "sourceDirList": [],
+        "defineList": []
+      }
+    }
+  },
+  "version": "3.3"
+}

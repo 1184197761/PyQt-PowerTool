@@ -1,0 +1,55 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Embedded Debug",
+            "type": "embedded-debug",
+            "request": "launch",
+            "serialNumber": "${command:device-manager.getSerialNumber}",
+            "program": "${command:embedded-debug.getApplicationFile}",
+            "cmsisPack": "${command:device-manager.getDevicePack}",
+            "debugFrom": "main"
+        },
+        {
+            "cwd": "${workspaceRoot}",
+            "type": "cortex-debug",
+            "request": "launch",
+            "name": "jlink",
+            "servertype": "jlink",
+            "interface": "swd",
+            "executable": "build\\FLASH\\Project.elf",
+            "runToEntryPoint": "main",
+            "device": "TAE32F5300",
+            "svdFile": ".pack/Tai-Action/TAE32F53xx_DFP.1.4.7/SVD/TAE32F53xx.svd"
+        },
+        {
+            "cwd": "${workspaceRoot}",
+            "type": "cortex-debug",
+            "request": "launch",
+            "name": "openocd",
+            "servertype": "openocd",
+            "executable": "build\\FLASH\\Project.elf",
+            "runToEntryPoint": "main",
+            "configFiles": [
+                "interface/cmsis-dap.cfg",
+                "${workspaceFolder}/tae32f5300_eval.cfg"
+            ],
+            "showDevDebugOutput": "raw",
+            "svdFile": ".pack/Tai-Action/TAE32F53xx_DFP.1.4.4/SVD/TAE32F53xx.svd"
+        },
+        {
+            "cwd": "${workspaceRoot}",
+            "type": "cortex-debug",
+            "request": "launch",
+            "name": "stlink",
+            "servertype": "openocd",
+            "executable": "build\\FLASH\\Project.elf",
+            "runToEntryPoint": "main",
+            "configFiles": [
+                "interface/stlink.cfg",
+                "target/<target-name>.cfg"
+            ],
+            "svdFile": ".pack/Tai-Action/TAE32F53xx_DFP.1.4.4/SVD/TAE32F53xx.svd"
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+{
+  // 使用 IntelliSense 了解相关属性。 
+  // 悬停以查看现有属性的描述。
+  // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    
+    {
+      "name": "Arm Debug",
+      "type": "arm-debug",
+      "request": "launch",
+      "program": "${command:embedded-debug.getApplicationFile}",
+      "serialNumber": "${command:device-manager.getSerialNumber}",
+      "cmsisDevice": "<concatenation of CMSIS pack name, device vendor, device name and processor name>",
+      "probe": "CMSIS-DAP",
+      "debugFrom": "main"
+    },
+    {
+      "name": "Arm Debug",
+      "type": "arm-debug",
+      "request": "attach",
+      "program": "${command:embedded-debug.getApplicationFile}",
+      "port": "<host>:<port> to connect to",
+      "cdbEntry": "<configuration database entry to select>",
+      "debugFrom": "main"
+    }
+  ]
+}

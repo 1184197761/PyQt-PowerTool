@@ -1,0 +1,113 @@
+project:
+  components:
+    - component: ARM::CMSIS:CORE
+      for-type:
+        - +FLASH
+        - +SRAM
+  groups:
+    - files:
+        - file: ..\..\User\Source\main.c
+        - file: ..\..\User\Source\tae32f53xx_it.c
+        - file: ..\..\User\Source\tae32f53xx_ll_msp.c
+        - file: ..\..\User\Source\user_vofa.c
+        - file: ..\..\User\Source\user_tmr.c
+      for-type: +SRAM
+      group: ProjectTemplate/User
+    - files:
+        - file: ..\..\readme.md
+      for-type: +SRAM
+      group: Documentation
+    - files:
+        - file: ..\..\..\Drivers\TAE32F53xx_Driver\Src\tae32f53xx_ll.c
+        - file: ..\..\..\Drivers\TAE32F53xx_Driver\Src\tae32f53xx_ll_adc.c
+        - file: ..\..\..\Drivers\TAE32F53xx_Driver\Src\tae32f53xx_ll_can.c
+        - file: ..\..\..\Drivers\TAE32F53xx_Driver\Src\tae32f53xx_ll_cmp.c
+        - file: ..\..\..\Drivers\TAE32F53xx_Driver\Src\tae32f53xx_ll_cortex.c
+        - file: ..\..\..\Drivers\TAE32F53xx_Driver\Src\tae32f53xx_ll_dac.c
+        - file: ..\..\..\Drivers\TAE32F53xx_Driver\Src\tae32f53xx_ll_dali.c
+        - file: ..\..\..\Drivers\TAE32F53xx_Driver\Src\tae32f53xx_ll_dflash.c
+        - file: ..\..\..\Drivers\TAE32F53xx_Driver\Src\tae32f53xx_ll_dma.c
+        - file: ..\..\..\Drivers\TAE32F53xx_Driver\Src\tae32f53xx_ll_ecu.c
+        - file: ..\..\..\Drivers\TAE32F53xx_Driver\Src\tae32f53xx_ll_flash.c
+        - file: ..\..\..\Drivers\TAE32F53xx_Driver\Src\tae32f53xx_ll_fpll.c
+        - file: ..\..\..\Drivers\TAE32F53xx_Driver\Src\tae32f53xx_ll_gpio.c
+        - file: ..\..\..\Drivers\TAE32F53xx_Driver\Src\tae32f53xx_ll_hrpwm.c
+        - file: ..\..\..\Drivers\TAE32F53xx_Driver\Src\tae32f53xx_ll_i2c.c
+        - file: ..\..\..\Drivers\TAE32F53xx_Driver\Src\tae32f53xx_ll_iir.c
+        - file: ..\..\..\Drivers\TAE32F53xx_Driver\Src\tae32f53xx_ll_iwdg.c
+        - file: ..\..\..\Drivers\TAE32F53xx_Driver\Src\tae32f53xx_ll_lvdctrl.c
+        - file: ..\..\..\Drivers\TAE32F53xx_Driver\Src\tae32f53xx_ll_sysctrl.c
+        - file: ..\..\..\Drivers\TAE32F53xx_Driver\Src\tae32f53xx_ll_tmr.c
+        - file: ..\..\..\Drivers\TAE32F53xx_Driver\Src\tae32f53xx_ll_uart.c
+        - file: ..\..\..\Drivers\TAE32F53xx_Driver\Src\tae32f53xx_ll_usb.c
+        - file: ..\..\..\Drivers\TAE32F53xx_Driver\Src\tae32f53xx_ll_wwdg.c
+      for-type: +SRAM
+      group: Drivers/TAE_Driver
+    - files:
+        - file: ..\..\..\Drivers\TAE32F53xx_Device\Source\startup_tae32f53xx.c
+        - file: ..\..\..\Drivers\TAE32F53xx_Device\Source\system_tae32f53xx.c
+      for-type: +SRAM
+      group: Drivers/TAE_Device
+    - files:
+        - file: ..\..\..\Utilities\dbg\user_debug.c
+      for-type: +SRAM
+      group: Utilities/Debug
+    - for-type: +SRAM
+      group: ::CMSIS
+    - files:
+        - file: SRAM\tae32f53xx_ac5_sram.sct
+      for-type: +SRAM
+      group: Scatter File
+    - files:
+        - file: ..\..\User\Source\main.c
+        - file: ..\..\User\Source\tae32f53xx_it.c
+        - file: ..\..\User\Source\tae32f53xx_ll_msp.c
+        - file: ..\..\User\Source\user_vofa.c
+        - file: ..\..\User\Source\user_tmr.c
+      for-type: +FLASH
+      group: ProjectTemplate/User
+    - files:
+        - file: ..\..\readme.md
+      for-type: +FLASH
+      group: Documentation
+    - files:
+        - file: ..\..\..\Drivers\TAE32F53xx_Driver\Src\tae32f53xx_ll.c
+        - file: ..\..\..\Drivers\TAE32F53xx_Driver\Src\tae32f53xx_ll_adc.c
+        - file: ..\..\..\Drivers\TAE32F53xx_Driver\Src\tae32f53xx_ll_can.c
+        - file: ..\..\..\Drivers\TAE32F53xx_Driver\Src\tae32f53xx_ll_cmp.c
+        - file: ..\..\..\Drivers\TAE32F53xx_Driver\Src\tae32f53xx_ll_cortex.c
+        - file: ..\..\..\Drivers\TAE32F53xx_Driver\Src\tae32f53xx_ll_dac.c
+        - file: ..\..\..\Drivers\TAE32F53xx_Driver\Src\tae32f53xx_ll_dali.c
+        - file: ..\..\..\Drivers\TAE32F53xx_Driver\Src\tae32f53xx_ll_dflash.c
+        - file: ..\..\..\Drivers\TAE32F53xx_Driver\Src\tae32f53xx_ll_dma.c
+        - file: ..\..\..\Drivers\TAE32F53xx_Driver\Src\tae32f53xx_ll_ecu.c
+        - file: ..\..\..\Drivers\TAE32F53xx_Driver\Src\tae32f53xx_ll_flash.c
+        - file: ..\..\..\Drivers\TAE32F53xx_Driver\Src\tae32f53xx_ll_fpll.c
+        - file: ..\..\..\Drivers\TAE32F53xx_Driver\Src\tae32f53xx_ll_gpio.c
+        - file: ..\..\..\Drivers\TAE32F53xx_Driver\Src\tae32f53xx_ll_hrpwm.c
+        - file: ..\..\..\Drivers\TAE32F53xx_Driver\Src\tae32f53xx_ll_i2c.c
+        - file: ..\..\..\Drivers\TAE32F53xx_Driver\Src\tae32f53xx_ll_iir.c
+        - file: ..\..\..\Drivers\TAE32F53xx_Driver\Src\tae32f53xx_ll_iwdg.c
+        - file: ..\..\..\Drivers\TAE32F53xx_Driver\Src\tae32f53xx_ll_lvdctrl.c
+        - file: ..\..\..\Drivers\TAE32F53xx_Driver\Src\tae32f53xx_ll_sysctrl.c
+        - file: ..\..\..\Drivers\TAE32F53xx_Driver\Src\tae32f53xx_ll_tmr.c
+        - file: ..\..\..\Drivers\TAE32F53xx_Driver\Src\tae32f53xx_ll_uart.c
+        - file: ..\..\..\Drivers\TAE32F53xx_Driver\Src\tae32f53xx_ll_usb.c
+        - file: ..\..\..\Drivers\TAE32F53xx_Driver\Src\tae32f53xx_ll_wwdg.c
+      for-type: +FLASH
+      group: Drivers/TAE_Driver
+    - files:
+        - file: ..\..\..\Drivers\TAE32F53xx_Device\Source\startup_tae32f53xx.c
+        - file: ..\..\..\Drivers\TAE32F53xx_Device\Source\system_tae32f53xx.c
+      for-type: +FLASH
+      group: Drivers/TAE_Device
+    - files:
+        - file: ..\..\..\Utilities\dbg\user_debug.c
+      for-type: +FLASH
+      group: Utilities/Debug
+    - for-type: +FLASH
+      group: ::CMSIS
+    - files:
+        - file: FLASH\tae32f53xx_ac6_flash.sct
+      for-type: +FLASH
+      group: Scatter File

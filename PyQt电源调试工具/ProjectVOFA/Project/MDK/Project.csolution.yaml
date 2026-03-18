@@ -1,0 +1,87 @@
+solution:
+  packs:
+    - for-type:
+        - +SRAM
+        - +FLASH
+      pack: ARM::CMSIS@5.9.0
+    - for-type: +FLASH
+      pack: Tai-Action::TAE32F53xx_DFP@1.4.7
+  projects:
+    - project: Project.cproject.yaml
+  target-types:
+    - add-path:
+        - ..\..\..\Drivers\TAE32F53xx_Device\Include
+        - ..\..\..\Drivers\TAE32F53xx_Driver\Inc
+        - ..\..\User\Include
+        - ..\..\..\Utilities
+        - ..\..\..\Middlewares\TAE\TAE32F53xx_USB_Device_Library\Class\HID\Inc
+        - ..\..\..\Middlewares\TAE\TAE32F53xx_USB_Device_Library\Core\Inc
+      compiler: AC6
+      device: ARMCM3
+      misc:
+        - ASM:
+            - -masm=auto
+          C*:
+            - -fno-rtti
+            - -funsigned-char
+            - -fshort-enums
+            - -fshort-wchar
+            - -ffunction-sections
+            - -std=c99
+            - -Weverything
+            - -Wno-packed
+            - -Wno-reserved-id-macro
+            - -Wno-unused-macros
+            - -Wno-documentation-unknown-command
+            - -Wno-documentation
+            - -Wno-license-management
+            - -Wno-parentheses-equality
+          Link:
+            - --diag_suppress=L6314W
+            - --strict
+      optimize: none
+      processor:
+        endian: little
+        fpu: "off"
+        trustzone: non-secure
+      type: SRAM
+    - add-path:
+        - ..\..\..\Drivers\TAE32F53xx_Device\Include
+        - ..\..\..\Drivers\TAE32F53xx_Driver\Inc
+        - ..\..\User\Include
+        - ..\..\..\Utilities
+        - ..\..\..\Middlewares\TM\TAE32F53xx_USB_Device_Library\Class\HID\Inc
+        - ..\..\..\Middlewares\TM\TAE32F53xx_USB_Device_Library\Core\Inc
+      compiler: AC6
+      device: TAE32F5300
+      misc:
+        - ASM:
+            - -masm=auto
+          C*:
+            - -fno-rtti
+            - -funsigned-char
+            - -fshort-enums
+            - -fshort-wchar
+            - -ffunction-sections
+            - -std=c11
+            - -Wno-packed
+            - -Wno-missing-variable-declarations
+            - -Wno-missing-prototypes
+            - -Wno-missing-noreturn
+            - -Wno-sign-conversion
+            - -Wno-nonportable-include-path
+            - -Wno-reserved-id-macro
+            - -Wno-unused-macros
+            - -Wno-documentation-unknown-command
+            - -Wno-documentation
+            - -Wno-license-management
+            - -Wno-parentheses-equality
+          Link:
+            - --diag_suppress=L6314W
+            - --strict
+      optimize: none
+      processor:
+        endian: little
+        fpu: "off"
+        trustzone: non-secure
+      type: FLASH
